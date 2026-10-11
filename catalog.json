@@ -1,0 +1,142 @@
+{
+  "title": "历史 Library｜历史动态解释",
+  "description": "从文书到战争，从权力到选择。用可暂停的动态图版、详细解释与历史材料，沿着事件理解过去。",
+  "projects": [
+    {
+      "id": "magna-carta",
+      "title": "大宪章：一份失败的和平协议，怎样成为限制权力的象征",
+      "description": "1215年的协议为什么很快失败，又为什么在后来的历史中不断被援引？",
+      "tags": [
+        "约翰",
+        "亨利三世",
+        "贵族",
+        "王权",
+        "宪章",
+        "法律"
+      ],
+      "focus": {
+        "start": "1199-01-01",
+        "end": "1297-12-31"
+      },
+      "dates": [
+        "1215-06-15",
+        "1216-11-12",
+        "1225-02-11"
+      ],
+      "countries": [
+        {
+          "code": "GB",
+          "label": "英格兰（今英国）"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-magna-carta/",
+        "vercel": "https://interactive-history-magna-carta.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/magna-carta.jpg",
+        "alt": "英国图书馆藏1215年大宪章存世文本之一；拉丁文羊皮纸文书",
+        "caption": "1215年大宪章的存世文书之一，英国图书馆 Cotton Augustus II.106，图像号011345。文书日期与现代数字化日期分开记录；本图不展示约翰签字的现场。 CC0 1.0 Universal Public Domain Dedication（British Library公开图像，Commons文件页明示）；https://commons.wikimedia.org/wiki/File:Magna_Carta_(1215)_-_BL_Cotton_MS_Augustus_II_106.jpg"
+      }
+    },
+    {
+      "id": "northern-expedition",
+      "title": "战争与共和：北伐战争与军阀混战",
+      "description": "军事实力、中央承认与实际管理如何分离，又怎样在战争与结盟中重新组合？",
+      "tags": [
+        "北伐",
+        "军阀",
+        "蒋介石",
+        "民国",
+        "国民革命军",
+        "张作霖"
+      ],
+      "focus": {
+        "start": "1911-01-01",
+        "end": "1930-12-31"
+      },
+      "dates": [
+        "1911-10-10",
+        "1926-07-09",
+        "1927-04-12",
+        "1928-06-04",
+        "1928-12-29"
+      ],
+      "countries": [
+        {
+          "code": "CN",
+          "label": "中国"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-northern-expedition/",
+        "vercel": "https://interactive-history-northern-expedi.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/northern-expedition.jpg",
+        "alt": "1928年中国中东部地图材料",
+        "caption": "1928年中国中东部地图的阅读缩图，NARA 76028917。材料日期与事件日期分开；路线与控制范围的示意限制见资料说明。 来源及许可：https://commons.wikimedia.org/wiki/File:Map_of_East_Central_China_-_NARA_-_76028917.jpg"
+      }
+    },
+    {
+      "id": "cuban-missile-crisis",
+      "title": "古巴导弹危机：为什么走到核战争边缘，又怎样退了回来",
+      "description": "当每一方都说自己在维护安全，为什么局势反而越来越危险？他们最后通过什么安排退出对抗？",
+      "tags": [
+        "肯尼迪",
+        "赫鲁晓夫",
+        "卡斯特罗",
+        "核战争",
+        "冷战",
+        "外交"
+      ],
+      "focus": {
+        "start": "1962-01-01",
+        "end": "1962-12-31"
+      },
+      "dates": [
+        "1962-10-14",
+        "1962-10-16",
+        "1962-10-22",
+        "1962-10-23",
+        "1962-10-24",
+        "1962-10-25",
+        "1962-10-26",
+        "1962-10-27",
+        "1962-10-28",
+        "1962-11-20",
+        "1963-06-20"
+      ],
+      "countries": [
+        {
+          "code": "CU",
+          "label": "古巴"
+        },
+        {
+          "code": "US",
+          "label": "美国"
+        },
+        {
+          "code": "SU",
+          "label": "苏联"
+        },
+        {
+          "code": "TR",
+          "label": "土耳其"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-cuban-missile-crisis/",
+        "vercel": "https://interactive-history-cuban-missile-c.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/cuban-missile-crisis.jpg",
+        "alt": "肯尼迪及美国决策机构；白宫内阁会议室；档案号 ST-A26-25-62",
+        "caption": "1962年10月29日，肯尼迪与ExComm成员开会。Cecil Stoughton / White House Photographs / JFK Library，ST-A26-25-62。照片晚于10月27—28日的关键交换，用来认识决策机构，不代表那两天的具体会场。 Public domain（美国联邦政府雇员履行公务制作；Commons PD-USGov-POTUS）；https://commons.wikimedia.org/wiki/File:EXCOMM_meeting,_Cuban_Missile_Crisis,_29_October_1962.jpg"
+      }
+    }
+  ]
+}
