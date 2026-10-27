@@ -137,6 +137,41 @@
         "alt": "肯尼迪及美国决策机构；白宫内阁会议室；档案号 ST-A26-25-62",
         "caption": "1962年10月29日，肯尼迪与ExComm成员开会。Cecil Stoughton / White House Photographs / JFK Library，ST-A26-25-62。照片晚于10月27—28日的关键交换，用来认识决策机构，不代表那两天的具体会场。 Public domain（美国联邦政府雇员履行公务制作；Commons PD-USGov-POTUS）；https://commons.wikimedia.org/wiki/File:EXCOMM_meeting,_Cuban_Missile_Crisis,_29_October_1962.jpg"
       }
+    },
+    {
+      "id": "anthropic-ipo-20261026",
+      "title": "A\\ 申请上市：如何骂得有理有据？",
+      "description": "从普通用户的角度，拆解 Anthropic 上市申请中的增长、版权、使用规则与公司承诺。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "人工智能",
+        "IPO",
+        "上市"
+      ],
+      "focus": {
+        "start": "2023-01-01",
+        "end": "2026-12-31"
+      },
+      "dates": [
+        "2026-10-26"
+      ],
+      "countries": [
+        {
+          "code": "US",
+          "label": "美国"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-anthropic-ipo/",
+        "vercel": "https://interactive-history-anthropic-ipo.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/anthropic-ipo.jpg",
+        "alt": "纽约时代广场纳斯达克 MarketSite 外观",
+        "caption": "Nasdaq MarketSite，2021 年照片；用于说明拟申请挂牌的市场背景。"
+      }
     }
   ]
 }
