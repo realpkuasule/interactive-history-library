@@ -215,11 +215,12 @@
         "github": "https://realpkuasule.github.io/interactive-history-april12/",
         "vercel": "https://interactive-history-april12.vercel.app/"
       },
-      "bilibiliUrl": null,
+      "bilibiliUrl": "https://www.bilibili.com/video/BV1K6x76FE6x/",
       "cover": {
         "path": "covers/april12-1927.jpg",
         "alt": "陈独秀、蒋介石与上海工人学生游行历史照片的编辑拼贴，标题“背叛”",
-        "caption": "陈独秀1919年照片、蒋介石1925年照片与1927年上海工人学生游行图的编辑拼贴；各图日期不同，用于身份和事件背景说明。原图出处、许可与加工记录见作品资料。"
+        "caption": "陈独秀1919年照片、蒋介石1925年照片与1927年上海工人学生游行图的编辑拼贴；各图日期不同，用于身份和事件背景说明。原图出处、许可与加工记录见作品资料。",
+        "fit": "contain"
       }
     }
   ]
