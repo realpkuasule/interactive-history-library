@@ -1,7 +1,9 @@
 // Pure catalog validation and filtering, shared by static Library builds and browsers.
+// BCE_YEAR_SUPPORT
 function validDate(value) {
-  if (typeof value !== 'string' || !/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(value)) return false;
-  const [year, month, day] = value.split('-').map(Number);
+  if (typeof value !== 'string' || !/^-?\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const negative = value.startsWith('-');
+  const [year, month, day] = value.slice(negative ? 1 : 0).split('-').map(Number);
   if (year < 1 || month < 1 || month > 12) return false;
   const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
   const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -9,6 +11,11 @@ function validDate(value) {
 }
 
 const nonempty = value => typeof value === 'string' && value.trim().length > 0;
+function dateIndex(value) {
+  const text = String(value);
+  const magnitude = Math.abs(Number(text.slice(0, text.startsWith('-') ? 5 : 4)));
+  return text.startsWith('-') ? 1 - magnitude : magnitude;
+}
 function requireValue(condition, message) {
   if (!condition) throw new Error(`Invalid Library catalog: ${message}`);
 }
@@ -32,7 +39,7 @@ export function validateCatalog(catalog) {
     ids.add(id);
     requireValue(nonempty(title) && nonempty(description), `${id}: title and description are required`);
     requireValue(Array.isArray(tags) && tags.every(nonempty), `${id}: invalid tags`);
-    requireValue(focus && validDate(focus.start) && validDate(focus.end) && focus.start <= focus.end, `${id}: invalid focus interval`);
+    requireValue(focus && validDate(focus.start) && validDate(focus.end) && dateIndex(focus.start) <= dateIndex(focus.end), `${id}: invalid focus interval`);
     requireValue(Array.isArray(dates) && dates.every(validDate), `${id}: invalid event dates`);
     requireValue(Array.isArray(countries) && countries.length > 0 && countries.every(country => country && nonempty(country.code) && nonempty(country.label)), `${id}: invalid countries`);
     requireValue(urls && publicUrl(urls.github) && publicUrl(urls.vercel), `${id}: invalid mirror URLs`);
@@ -47,15 +54,16 @@ export function validateCatalog(catalog) {
 
 export function filterProjects(projects, { keyword = '', year = '', date = '', country = '' } = {}) {
   const yearText = String(year).trim();
+  const yearIndex = yearText ? (yearText.startsWith('-') ? 1 - Math.abs(Number(yearText)) : Number(yearText)) : null;
   const dateText = String(date).trim();
-  if (yearText && (!/^[0-9]{4}$/.test(yearText) || Number(yearText) < 1)) return [];
+  if (yearText && (!/^(?:[0-9]{4}|-[0-9]{1,4})$/.test(yearText) || /^0/.test(yearText.replace('-', '')))) return [];
   if (dateText && !validDate(dateText)) return [];
   const tokens = String(keyword).trim().toLocaleLowerCase().split(/\s+/u).filter(Boolean);
   const countryCode = String(country).trim();
   return projects.filter(project => {
     const haystack = [project.title, project.description, ...project.tags].join(' ').toLocaleLowerCase();
     if (!tokens.every(token => haystack.includes(token))) return false;
-    if (yearText && (yearText < project.focus.start.slice(0, 4) || yearText > project.focus.end.slice(0, 4))) return false;
+    if (yearIndex !== null && (yearIndex < dateIndex(project.focus.start) || yearIndex > dateIndex(project.focus.end))) return false;
     if (dateText && !project.dates.includes(dateText)) return false;
     if (countryCode && !project.countries.some(item => item.code === countryCode)) return false;
     return true;

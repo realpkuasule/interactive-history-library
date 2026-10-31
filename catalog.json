@@ -271,6 +271,84 @@
         "alt": "汪精卫、唐生智、陈独秀、冯玉祥四人肖像拼贴",
         "caption": "拼贴肖像：汪精卫（1926 年 1 月摄于广州，摄影符聘昌，香港大学档案数字化藏品 Fu-n127）、唐生智、陈独秀、冯玉祥，均取自 Wikimedia Commons 公有领域文件。均为人物照片，非 1927 年七一五事件现场影像；出处与许可见站内史料清单。"
       }
+    },
+    {
+      "id": "qin-unification",
+      "resourceId": "pilot-qin-unification",
+      "title": "秦为什么能统一天下，却没能守住天下？",
+      "description": "公元前221年，秦结束了长期分裂。十几年后，这个拥有强大动员能力的王朝却走向崩溃。本片沿着具体变化追问：怎样把战胜对手的力量，变成能够延续的秩序？",
+      "tags": [
+        "秦朝",
+        "秦始皇",
+        "统一",
+        "郡县制",
+        "中央集权",
+        "中国古代史"
+      ],
+      "focus": {
+        "start": "-0250-01-01",
+        "end": "-0207-12-31"
+      },
+      "dates": [
+        "-0221-01-01",
+        "-0215-01-01",
+        "-0209-01-01",
+        "-0207-01-01"
+      ],
+      "countries": [
+        {
+          "code": "CN",
+          "label": "中国"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-qin/",
+        "vercel": "https://interactive-history-qin.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/qin-unification.jpg",
+        "alt": "课程封面合成图：秦统一与秦末危机",
+        "caption": "《秦为什么能统一天下，却没能守住天下？》课程封面（课程自制合成图，非史料影像）。"
+      }
+    },
+    {
+      "id": "qin-shihuang",
+      "resourceId": "pilot-qin-shihuang-evaluation",
+      "title": "评价秦始皇，为什么不能只算功过？",
+      "description": "秦朝灭亡时，秦始皇已经去世。完成统一、推广郡县与共同规则，和大型工程、繁重征发、严苛刑法，都与他的统治联系在一起。本片把这些事实放回当时的条件，区分他继承了什么、承担了什么。",
+      "tags": [
+        "秦始皇",
+        "秦朝",
+        "人物评价",
+        "郡县制",
+        "统一多民族国家"
+      ],
+      "focus": {
+        "start": "-0247-01-01",
+        "end": "-0210-12-31"
+      },
+      "dates": [
+        "-0247-01-01",
+        "-0221-01-01",
+        "-0210-01-01"
+      ],
+      "countries": [
+        {
+          "code": "CN",
+          "label": "中国"
+        }
+      ],
+      "urls": {
+        "github": "https://realpkuasule.github.io/interactive-history-qin/",
+        "vercel": "https://interactive-history-qin.vercel.app/"
+      },
+      "bilibiliUrl": null,
+      "cover": {
+        "path": "covers/qin-shihuang.jpg",
+        "alt": "课程封面合成图：秦始皇评价",
+        "caption": "《评价秦始皇，为什么不能只算功过？》课程封面（课程自制合成图，非史料影像）。"
+      }
     }
   ]
 }
