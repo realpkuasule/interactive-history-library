@@ -303,9 +303,11 @@
       ],
       "urls": {
         "github": "https://realpkuasule.github.io/interactive-history-qin/",
-        "vercel": "https://interactive-history-qin.vercel.app/"
+        "vercel": "https://interactive-history-qin.vercel.app/",
+        "bilibili": "https://www.bilibili.com/video/BV1AexC6FEAh/",
+        "article": "https://www.bilibili.com/opus/1265270019374186505"
       },
-      "bilibiliUrl": null,
+      "bilibiliUrl": "https://www.bilibili.com/video/BV1AexC6FEAh/",
       "cover": {
         "path": "covers/qin-unification.jpg",
         "alt": "课程封面合成图：秦统一与秦末危机",
@@ -341,9 +343,11 @@
       ],
       "urls": {
         "github": "https://realpkuasule.github.io/interactive-history-qin/",
-        "vercel": "https://interactive-history-qin.vercel.app/"
+        "vercel": "https://interactive-history-qin.vercel.app/",
+        "bilibili": "https://www.bilibili.com/video/BV1AexC6FEwS/",
+        "article": "https://www.bilibili.com/opus/1265270551976345604"
       },
-      "bilibiliUrl": null,
+      "bilibiliUrl": "https://www.bilibili.com/video/BV1AexC6FEwS/",
       "cover": {
         "path": "covers/qin-shihuang.jpg",
         "alt": "课程封面合成图：秦始皇评价",
